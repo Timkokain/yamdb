@@ -1,8 +1,8 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from users.views import (RegistrationAPIView,
-                         TokenRegistrationAPIView, UsersViewSet)
+from users.views import (RegistrationAPIView, TokenRegistrationAPIView,
+                         UsersViewSet)
 
 app_name = 'users'
 
