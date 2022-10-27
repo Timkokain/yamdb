@@ -1,7 +1,7 @@
 # api_yamdb
 ## Ver 1.05
 
-![example workflow](https://github.com/timkokain/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![workflow](https://github.com/timkokain/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание
 
