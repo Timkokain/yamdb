@@ -49,24 +49,24 @@ docker-compose stop
 ```
 * Исполнение manage.py команд проводится через:
 ```bash
-docker-compose exec web python manage.py <command>
+sudo docker compose exec web python manage.py <command>
 ```
 ### Для начала работы необходимо (контейнеры должны быть запущены)
   - выболнить миграции:
   ```bash
-  docker-compose exec web python manage.py migrate
+  sudo docker compose exec web python manage.py migrate
   ```
   - загрузить фикстуры:
   ```bash
-  docker-compose exec web python manage.py load_data
+  sudo docker compose exec web python manage.py load_data
   ```
   - собрать статику:
   ```bash
-  docker-compose exec web python manage.py colectstatic --no-input
+  sudo docker compose exec web python manage.py colectstatic --no-input
   ```
   - если необходимо, создайте суперпользователя:
   ```bash
-  docker-compose exec web python manage.py createsuperuser
+  sudo docker compose exec web python manage.py createsuperuser
   ```
   - заполнить базу данными:
   ```bash
