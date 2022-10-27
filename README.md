@@ -62,7 +62,7 @@ sudo docker compose exec web python manage.py <command>
   ```
   - собрать статику:
   ```bash
-  sudo docker compose exec web python manage.py colectstatic --no-input
+  sudo docker compose exec web python manage.py collectstatic --no-input
   ```
   - если необходимо, создайте суперпользователя:
   ```bash
