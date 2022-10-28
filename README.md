@@ -2,6 +2,7 @@
 ## Ver 1.05
 
 ![workflow](https://github.com/timkokain/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+[linktotheproject](http://158.160.5.93/redoc/)
 
 ## Описание
 
