@@ -18,9 +18,10 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         return request.method == 'GET' or request.user.is_authenticated
 
     def has_object_permission(self, request, view, obj):
-        if request.method in permissions.SAFE_METHODS:
-            return True
-        elif request.method == 'DELETE' and request.user.is_moderator:
+        if (
+            request.method in permissions.SAFE_METHODS
+            or request.method == 'DELETE' and request.user.is_moderator
+        ):
             return True
         return obj.author == request.user
 
